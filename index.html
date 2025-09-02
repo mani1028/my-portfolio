@@ -1,692 +1,1330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo"><b>MANI</b></div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#certificates">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo"><b>MANI</b></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#Certificates" onclick="toggleMenu()">Certifications</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpeg" alt="profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">MANIKANTA CHELAMALLA</h1>
-        <p class="section__text__p2">DATA ANALYTICS</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./assets/resume.pdf'">
-            Resume
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mani1028/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/mani1028'"
-          />
-        </div>
-      </div> 
-    </section>
-    <head>
-      <link rel="stylesheet" href="about.css">
-    </head>
-    
-    <body>
-      <section class="about-section">
-        <img src="./assets/pic.jpeg" alt="Manikanta Chelamalla" class="about-image">
-        
-        <div class="about-text">
-          <p class="section__text__p1">Get To Know More</p>
-          <h2 class="title">👋About Me</h2>
-          <p>Hi, I’m <strong>Manikanta Chelamalla</strong>, an aspiring Data Analyst driven by curiosity and a passion for turning data into decisions.</p>
-          <p>I specialize in:</p>
-          <ul>
-            <li>📊 Data Analytics & Visualization</li>
-            <li>🧠 Machine Learning Projects</li>
-            <li>🧪 Real-time insights using SQL, Python & Power BI</li>
-          </ul>
-    
-          <div class="tools">🚀 Tools I Use:</div>
-          <p>Python · SQL · Power BI · Excel · Tableau</p>
-    
-          <div class="stack">🛠 Tech Stack:</div>
-          <p>Pandas · NumPy · Scikit-learn · XGBoost · Git · MySQL</p>
-    
-          <div class="education">🎓 Pursuing B.Tech in CSE – Vaagdevi Engineering College, Warangal (2021–2025)</div>
-        </div>
-      </section>
-    </body>
-    
-    <!-- <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          /></div>
-            <div class="about-details-container">
-<div class="text-container">
-            <p></br>
-    Welcome to my portfolio, where innovation meets creativity. Explore my latest projects, showcasing my skills in web development and data analytics, with a focus on creating engaging digital experiences</br>         
-            </p></div>
 
-<div class="about-containers">
-           <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Fresher <br />Data anayltics</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3></br>
-              <p><b>B.TECH:</b></br>Vaagdevi engineering college</br>Bollikunta,warangal<br />2021-2025</br></br>
-                   
-                 </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>INTERMEDIATE:</h3>
-              <p>Sai shivani jr college</br>bheemaram</br>2019-2021 </p>
-            </div>
-<div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>SSC</h3>
-              <p>SPR School of excellence</br>yellapur</br>2019</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-I am Passionate Data Analyst with expertise in transforming complex data into actionable insights, demonstrated through projects in machine learning, predictive analytics, and business intelligence.</p>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manikanta Chelamalla - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!--
+    - Custom style to fix name wrapping and for project modal
+  -->
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    
+    .info-content .name {
+      white-space: normal !important;
+    }
+
+
+
+    /* Full-screen Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      overflow: auto; /* Changed from overflow-y to auto */
+      animation: fadeIn 0.3s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .modal-content {
+      position: relative;
+      background: var(--eerie-black-2);
+      margin: 5% auto;
+      padding: 40px;
+      border: 2px solid var(--jet);
+      width: 80%;
+      max-width: 800px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-5);
+      box-sizing: border-box;
+    }
+    
+    .close-modal {
+      color: var(--white-2);
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .close-modal:hover,
+    .close-modal:focus {
+      color: var(--orange-yellow-crayola);
+      text-decoration: none;
+    }
+    
+    .modal-img-container {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    
+    .modal-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: var(--white-2);
+    }
+    
+    .modal-section-title {
+      font-size: 1.3rem;
+      margin: 20px 0 10px 0;
+      color: var(--white-2);
+      font-weight: 600;
+    }
+    
+    .modal-desc {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: var(--light-gray);
+    }
+    
+    .tools-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0 20px 0;
+    }
+    
+    .tool-tag {
+      background: var(--onyx);
+      border-radius: 1rem;
+      padding: 5px 15px;
+      font-size: 0.95rem;
+      color: var(--light-gray);
+    }
+    
+    .modal-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .modal-links a {
+      min-width: 140px;
+      padding: 10px 20px;
+      border-radius: 2rem;
+      border: none;
+      background: var(--orange-yellow-crayola);
+      color: var(--eerie-black-2);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      text-align: center;
+    }
+    
+    .modal-links a:hover {
+      background: var(--vegas-gold);
+      transform: translateY(-2px);
+    }
+
+    /* Certificate Section Styles */
+    .certificates-container {
+      background: var(--eerie-black-2);
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid var(--jet);
+      box-shadow: var(--shadow-1);
+      margin: 30px auto 0;
+      max-width: 750px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .certificates-container h2 {
+      color: var(--white-2);
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .certificate-display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #certificate-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--jet);
+      margin-bottom: 15px;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #certificate-description {
+      color: var(--light-gray);
+      margin-bottom: 20px;
+      min-height: 100px;
+      transition: opacity 0.5s ease-in-out;
+      text-align: center;
+    }
+
+    .view-button {
+      background: var(--orange-yellow-crayola);
+      color: var(--eerie-black-2);
+      padding: 10px 25px;
+      border: none;
+      border-radius: 2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .view-button:hover {
+      background: var(--vegas-gold);
+      transform: translateY(-2px);
+    }
+    
+    .fade-out {
+      opacity: 0;
+    }
+
+    /*-----------------------------------*\
+     * #RESUME BUTTONS
+    \*-----------------------------------*/
+
+    .resume-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .resume-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 140px;
+      padding: 10px 20px;
+      border-radius: 2rem;
+      border: none;
+      background: var(--orange-yellow-crayola);
+      color: var(--eerie-black-2);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .resume-btn:hover {
+      background: var(--vegas-gold);
+      transform: translateY(-2px);
+    }
+
+    .resume-btn ion-icon {
+      font-size: 1.2rem;
+    }
+    
+    /* Resume Modal Styles */
+    .resume-modal-content {
+      width: 90vw;
+      max-width: 900px;
+      height: 90vh;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #resumePdf {
+      flex-grow: 1;
+      border: 1px solid var(--jet);
+      border-radius: 8px;
+    }
+
+    /* Responsive adjustments for modals */
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 95%;
+        padding: 20px;
+        margin: 5% auto;
+      }
+
+      .resume-modal-content {
+        height: 85vh;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Manikanta Chelamalla" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Manikanta Chelamalla">MANIKANTA CHELAMALLA</h1>
+          <p class="title">AI Engineer | Data Scientist</p>
         </div>
-      </div> -->
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-         
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Analysis</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PYTHON</h3>
-                  <p>intermidate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Visualization</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Statistical Analysis</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Excel</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-           <div class="details-container">
-            <h2 class="experience-sub-title">SKILLS</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PYTHON</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <!--<article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3></h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article> -->
-            </div>
-          </div>
-        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-<section id=certificates>
-     <div class="certificates-container">
-        <h2>My Certificates</h2>
-        <div class="certificate-display">
-            <img id="certificate-image" src="certificate1.jpg" alt="Certificate" />
-            <p id="certificate-description">Description of Certificate 1.</p>
-            <button class="view-button" id="view-button" onclick="viewCertificate()">View Certificate</button>
-        </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:chelamalla.manikanta28@gmail.com" class="contact-link">chelamalla.manikanta28@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+918919816641" class="contact-link">+91 8919816641</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-10-28">October 28, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Warangal, Telangana, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/mani1028" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mani1028" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/_mani__x96_/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            An AI-driven Data Scientist and Machine Learning Engineer specializing in designing, training, and deploying predictive models and generative AI solutions. Proficient in deep learning, NLP, LLM applications, and MLOps workflows. Experienced in leveraging AI to solve real-world challenges through scalable, production-ready solutions. Passionate about writing clean, maintainable code and collaborating in Agile development environments.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI & ML Solutions</h4>
+
+                <p class="service-item-text">
+                  Developing high-quality, scalable AI and Machine Learning models.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                  Transforming complex datasets into actionable business insights.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python Development</h4>
+
+                <p class="service-item-text">
+                  Building data-driven applications and backend APIs with Python.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Dashboarding</h4>
+
+                <p class="service-item-text">
+                  Creating insightful dashboards with Power BI and Tableau.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        
+        <!--
+          - #RESUME BUTTONS
+        -->
+        <section class="resume-buttons">
+          <a href="#" onclick="openResumeModal(); return false;" class="resume-btn">
+            <ion-icon name="eye-outline"></ion-icon>
+            <span>View Resume</span>
+          </a>
+          <a href="./assets/Manikanta_Chelamalla_Resume.pdf" download="Manikanta_Chelamalla_Resume.pdf" class="resume-btn">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vaagdevi Engineering College</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Bachelor of Computer Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sai Shivani Junior College</h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                Intermediate
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SPR School of Excellence</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                Schooling
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Specialist (Virtual Internship)</h4>
+              <span>Forage (Accenture, Quantium)</span>
+
+              <span>December 2024</span>
+
+              <p class="timeline-text">
+                Conducted uplift tests & customer segmentation using Python, SQL & ML models. Built AI-driven dashboards to monitor customer engagement KPIs.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Account & Data Management Associate</h4>
+              <span>Durga Dairy Products, Warangal</span>
+
+              <span>March 2025 - May 2025</span>
+
+              <p class="timeline-text">
+                Managed financial datasets in Excel and automated reporting using Python, reducing manual work by 40%. Built AI-powered Excel analysis scripts for error detection and trend forecasting.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python, SQL, Pandas, NumPy</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Scikit-learn, XGBoost, TensorFlow</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flask, FastAPI, Streamlit, Docker</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Power BI, Tableau</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - #CERTIFICATES
+        -->
+        <section id="certificates">
+          <div class="certificates-container">
+            <h2>My Certificates</h2>
+            <div class="certificate-display">
+                <img id="certificate-image" src="https://placehold.co/600x400/2a2a2c/ffffff?text=Certificate" alt="Certificate" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/2a2a2c/ffffff?text=Image+Not+Found';" />
+                <p id="certificate-description">Loading certificate description...</p>
+                <button class="view-button" id="view-button" onclick="viewCertificate()">View Certificate</button>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI & Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI & Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="ai & machine learning">
+              <a href="#" onclick="openModal(0); return false;">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="AI-Powered Nutrition Analyzer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI-Powered Nutrition Analyzer</h3>
+
+                <p class="project-category">AI & Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai & machine learning">
+              <a href="#" onclick="openModal(1); return false;">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Trip-Based Fuel Consumption Predictor" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Trip-Based Fuel Consumption Predictor</h3>
+
+                <p class="project-category">AI & Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data analysis">
+              <a href="#" onclick="openModal(2); return false;">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="Generative AI Chatbot for Data Insights" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Generative AI Chatbot for Data Insights</h3>
+
+                <p class="project-category">Data Analysis</p>
+
+              </a>
+            </li>
+            
+            
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#" onclick="openModal(3); return false;">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpeg" alt="Jam-Sync" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jam-Sync</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="ai & machine learning">
+              <a href="#" onclick="openModal(4); return false;">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="DOB-DECODE" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DOB-DECODE</h3>
+
+                <p class="project-category">web development</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60529.85215266848!2d79.55529305145262!3d17.98395564417334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f1b10555555%3A0x4f9c8c5c491b73c!2sWarangal%2C%20Telangana!5e0!3m2!1sen!2sin!4v1678886363543!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
 
-    <script>
-        const certificates = [
-            {
-                image: './certificates/accenture data analysis_completion_certificate new.jpg',
-                description: '**Accenture North America Data Analytics and Visualization Simulation - Forage** Completed a hands-on simulation as a Data Analyst, where I cleaned, modeled, and analyzed datasets to uncover content trends for a hypothetical social media client. Delivered insights through a professional PowerPoint deck and video presentation to support strategic decision-making.'
-            },
-             {
-                image: './certificates/freecodecamp data analytics certi.jpg',
-                description: 'Data Analytics with Python - freeCodeCamp Completed a course on Data Analytics with Python, focusing on data cleaning, analysis, and visualization using tools like Pandas and Matplotlib to derive insights from real-world datasets.'
-            },
-            {
-                image: './certificates/quantium da _completion_certificate.jpg',
-                description: 'Quantium Data Analytics Job Simulation - Forage Completed a simulation focused on data preparation, customer analytics, and commercial insights. Analyzed transaction datasets to identify trends, conducted uplift testing for trial store layouts, and delivered data-driven recommendations through comprehensive reports to support strategic decision-making..'
-            },
-            {
-                image: 'certificates/Data Analysis and Visualization Foundations - Coursera ibm.jpg',
-                description: 'Certificate in Data Analysis and Visualization Foundations from Coursera (IBM)'
-            },
-            {
-                image: 'certificates/excel skils goldman sachs_page-0001.jpg',
-                description: ''
-            },
-            {
-                image: 'certificates/project management forage accenture_page-0001.jpg',
-                description: ''
-            },
-            {
-                image: './certificates/certificate-1.jpeg',
-                description: 'Certificate in HTML from Sololearn.'
-            },
-            {
-                image: 'certificates/ms excel simple learn.jpg',
-                description: 'Certificate in Ms Excel from SimpleLearn'
-            },
-            {
-                image: 'certificates/Code soft web development certify.jpg',
-                description: ''
-            },
-            {
-                image: 'certificates/power query in excel simplelearn_page-0001.jpg',
-                description: 'Certificate in Power Query in Excel from SimpleLearn'
-            },
-            {
-                image: 'certificates/Coding raja Certify web dev.jpg',
-                description: 'Coding Raja 1-Month Web Developement Internship Certificate Completed a 1-month Web Development internship with Coding Raja, gaining practical experience in frontend programming,and working on real-world projects to enhance coding skills.'
-            },
-            {
-                image: 'certificates/WhatsApp Image 2024-12-16 at 8.02.26 PM.jpeg',
-                description: 'Coding Raja 1-Month Python Internship Certificate Completed a 1-month Python internship with Coding Raja, gaining practical experience in Python programming, problem-solving, and working on real-world projects to enhance coding skills.'
-            },
-            {
-                image: './certificates/python_basic certificate.jpg',
-                description: 'HackerRank Python Basics Certificate Completed the HackerRank Python Basics certification, demonstrating proficiency in fundamental Python concepts such as data types, control structures, functions, and object-oriented programming.'
-            },
-             {
-                image: './certificates/Ndli iot participation certificate.jpg',
-                description: 'NDLI IoT Participation Certificate Participated in the NDLI IoT program, gaining hands-on experience in Internet of Things (IoT) concepts and applications. Learned how to integrate IoT technologies for real-world problem-solving.'
-            },
-            {
-                image: './certificates/AWS Course Completion.jpg',
-                description: 'AWS Course Completion Completed an AWS course, gaining expertise in cloud computing, AWS services, and best practices for deploying and managing applications on the AWS platform.'
-            },
-            {
-                image: 'certificates/ibm intro to da.jpg',
-                description: 'Certificate in Intro to Data Analysis from IBM.'
-            },
-            {
-                image: 'certificates/ibm git.jpg',
-                description: 'Certificate in GIT from IBM.'
-            },
-            {
-                image: 'certificates/ibm excel for da.jpg',
-                description: 'Certificate in Excel for Data Analysis from IBM.'
-            },
-            {
-                image: 'certificates/ibm khan acasemy.jpg',
-                description: 'Certificate in Algorithms from IBM.'
-            },
-            {
-                image: 'certificates/powerbi miscrosoft.jpg',
-                description: ''
-            },
-            
-            {
-                image: 'certificates/Cn expo certify.jpg',
-                description: ''
-            },
-            {
-                image: 'certificates/ibm da with python.jpg',
-                description: 'Certificate in  Data Analysis with python from IBM'
-            },
-            {
-                image: 'certificates/Python completion cert.jpg',
-                description: ''
-            },
-            {
-                image: 'certificates/python intro miscrosoft_page-0001.jpg',
-                description: ''
-            },
-            {
-                image: 'certificates/Udemy Python course certify.jpg',
-                description: 'Certificate in Python crash course from Udemy.'
-            },
+  </main>
 
-        ];
+  <!-- Full-screen Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content" id="modalContent">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-img-container">
+        <img id="modalImg" src="" alt="" class="modal-img"/>
+      </div>
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <div class="modal-section-title">Project Overview</div>
+      <p id="modalDesc" class="modal-desc"></p>
+      <div class="modal-section-title">Tools Used</div>
+      <div id="modalTools" class="tools-list"></div>
+      <div class="modal-section-title">Links</div>
+      <div class="modal-links" id="modalLinks"></div>
+    </div>
+  </div>
+  
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content resume-modal-content">
+      <span class="close-modal" onclick="closeResumeModal()">&times;</span>
+      <iframe id="resumePdf" src="" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+  </div>
 
-        let currentIndex = 0;
 
-        function updateCertificate() {
-            const certificateImage = document.getElementById('certificate-image');
-            const certificateDescription = document.getElementById('certificate-description');
+  <!--
+    - custom js link
+  -->
+  <script>
+    'use strict';
 
+    // Certificate Slideshow Logic
+    const certificates = [
+        { image: './certificates/accenture data analysis_completion_certificate new.jpg', description: '**Accenture North America Data Analytics and Visualization Simulation - Forage** Completed a hands-on simulation as a Data Analyst, where I cleaned, modeled, and analyzed datasets to uncover content trends for a hypothetical social media client. Delivered insights through a professional PowerPoint deck and video presentation to support strategic decision-making.' },
+        { image: './certificates/freecodecamp data analytics certi.jpg', description: 'Data Analytics with Python - freeCodeCamp Completed a course on Data Analytics with Python, focusing on data cleaning, analysis, and visualization using tools like Pandas and Matplotlib to derive insights from real-world datasets.' },
+        { image: './certificates/quantium da _completion_certificate.jpg', description: 'Quantium Data Analytics Job Simulation - Forage Completed a simulation focused on data preparation, customer analytics, and commercial insights. Analyzed transaction datasets to identify trends, conducted uplift testing for trial store layouts, and delivered data-driven recommendations through comprehensive reports to support strategic decision-making..' },
+        { image: 'certificates/Data Analysis and Visualization Foundations - Coursera ibm.jpg', description: 'Certificate in Data Analysis and Visualization Foundations from Coursera (IBM)' },
+        { image: 'certificates/excel skils goldman sachs_page-0001.jpg', description: 'Goldman Sachs Excel Skills Certificate' },
+        { image: 'certificates/project management forage accenture_page-0001.jpg', description: 'Accenture Project Management Simulation Certificate' },
+        { image: './certificates/certificate-1.jpeg', description: 'Certificate in HTML from Sololearn.' },
+        { image: 'certificates/ms excel simple learn.jpg', description: 'Certificate in Ms Excel from SimpleLearn' },
+        { image: 'certificates/Code soft web development certify.jpg', description: 'Code Soft Web Development Certificate' },
+        { image: 'certificates/power query in excel simplelearn_page-0001.jpg', description: 'Certificate in Power Query in Excel from SimpleLearn' },
+        { image: 'certificates/Coding raja Certify web dev.jpg', description: 'Coding Raja 1-Month Web Developement Internship Certificate Completed a 1-month Web Development internship with Coding Raja, gaining practical experience in frontend programming,and working on real-world projects to enhance coding skills.' },
+        { image: 'certificates/WhatsApp Image 2024-12-16 at 8.02.26 PM.jpeg', description: 'Coding Raja 1-Month Python Internship Certificate Completed a 1-month Python internship with Coding Raja, gaining practical experience in Python programming, problem-solving, and working on real-world projects to enhance coding skills.' },
+        { image: './certificates/python_basic certificate.jpg', description: 'HackerRank Python Basics Certificate Completed the HackerRank Python Basics certification, demonstrating proficiency in fundamental Python concepts such as data types, control structures, functions, and object-oriented programming.' },
+        { image: './certificates/Ndli iot participation certificate.jpg', description: 'NDLI IoT Participation Certificate Participated in the NDLI IoT program, gaining hands-on experience in Internet of Things (IoT) concepts and applications. Learned how to integrate IoT technologies for real-world problem-solving.' },
+        { image: './certificates/AWS Course Completion.jpg', description: 'AWS Course Completion Completed an AWS course, gaining expertise in cloud computing, AWS services, and best practices for deploying and managing applications on the AWS platform.' },
+        { image: 'certificates/ibm intro to da.jpg', description: 'Certificate in Intro to Data Analysis from IBM.' },
+        { image: 'certificates/ibm git.jpg', description: 'Certificate in GIT from IBM.' },
+        { image: 'certificates/ibm excel for da.jpg', description: 'Certificate in Excel for Data Analysis from IBM.' },
+        { image: 'certificates/ibm khan acasemy.jpg', description: 'Certificate in Algorithms from IBM.' },
+        { image: 'certificates/powerbi miscrosoft.jpg', description: 'Microsoft Power BI Certificate' },
+        { image: 'certificates/Cn expo certify.jpg', description: 'CN Expo Certificate' },
+        { image: 'certificates/ibm da with python.jpg', description: 'Certificate in Data Analysis with python from IBM' },
+        { image: 'certificates/Python completion cert.jpg', description: 'Python Completion Certificate' },
+        { image: 'certificates/python intro miscrosoft_page-0001.jpg', description: 'Microsoft Intro to Python Certificate' },
+        { image: 'certificates/Udemy Python course certify.jpg', description: 'Certificate in Python crash course from Udemy.' },
+    ];
+
+    let certificateCurrentIndex = 0;
+
+    function updateCertificate() {
+        const certificateImage = document.getElementById('certificate-image');
+        const certificateDescription = document.getElementById('certificate-description');
+
+        if (certificateImage && certificateDescription) {
             // Fade out the current image and description
             certificateImage.classList.add('fade-out');
             certificateDescription.classList.add('fade-out');
 
             setTimeout(() => {
                 // Update the image and description after fading out
-                certificateImage.src = certificates[currentIndex].image;
-                certificateDescription.textContent = certificates[currentIndex].description;
+                const currentCert = certificates[certificateCurrentIndex];
+                certificateImage.src = currentCert.image;
+                certificateDescription.innerHTML = currentCert.description.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Support for bold text
 
                 // Fade in the new image and description
                 certificateImage.classList.remove('fade-out');
                 certificateDescription.classList.remove('fade-out');
 
-                currentIndex = (currentIndex + 1) % certificates.length; // Loop back to the first certificate
+                certificateCurrentIndex = (certificateCurrentIndex + 1) % certificates.length; // Loop back to the first certificate
             }, 500); // Match this duration with the CSS transition duration
         }
+    }
 
-        function viewCertificate() {
-            const certificateImage = document.getElementById('certificate-image');
-            const displayedSrc = certificateImage.src.split('/').pop(); // Extract the filename from the src
+    function viewCertificate() {
+        // The slideshow moves to the next item *after* updating the src, so we need to look at the previous index
+        const viewIndex = (certificateCurrentIndex - 1 + certificates.length) % certificates.length;
+        const currentCertificate = certificates[viewIndex];
 
-            // Find the matching certificate from the certificates array by comparing filenames
-            const currentCertificate = certificates.find(cert => cert.image.split('/').pop() === displayedSrc);
+        if (currentCertificate && currentCertificate.image) {
+            window.open(currentCertificate.image, '_blank'); // Opens the displayed certificate
+        } else {
+            // This is a fallback, but should not happen with the current logic
+            console.error('Certificate image not found.');
+        }
+    }
 
-            if (currentCertificate && currentCertificate.image) {
-                window.open(currentCertificate.image, '_blank'); // Opens the displayed certificate
-            } else {
-                alert('Certificate not available.');
+    // Initial display and start interval
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check if we are on the resume page before starting the slideshow
+      if (document.querySelector('.resume.active')) {
+        updateCertificate();
+        setInterval(updateCertificate, 4000);
+      }
+    });
+
+
+    // Project data with full descriptions and tools
+    const projects = [
+      {
+        title: "AI-Powered Nutrition Analyzer",
+        img: "./assets/images/project-1.png",
+        desc: "AI-Nutrition Analyzer is a full-stack web application designed for fitness enthusiasts and dieticians. Users can upload food images, and the app uses deep learning (TensorFlow) to instantly analyze and provide a detailed nutritional breakdown including calories, proteins, fats, and carbs. The backend is built with Python and Flask, while the frontend uses React for a smooth user experience. The project also features user authentication, a history dashboard, and RESTful APIs for scalability.",
+        tools: ["Python", "TensorFlow", "Flask", "React", "HTML", "CSS", "JavaScript", "REST API", "Docker"],
+        links: [
+          { label: "Live Demo", url: "https://nutrilife-f3qf.onrender.com/" },
+          { label: "View Code", url: "https://github.com/mani1028/Ai-Powered-Nutrition-Analyzer-For-Fitness-Enthusiasts" }
+        ]
+      },
+      {
+        title: "Trip-Based Fuel Consumption Predictor",
+        img: "./assets/images/project-2.png",
+        desc: "Fuel-Predication is a machine learning project that predicts future fuel prices based on historical data and market trends. The project involves data cleaning, feature engineering, and regression models (Linear, Random Forest). The dashboard visualizes trends and predictions, helping logistics and transportation companies optimize costs. Built with Python, Pandas, scikit-learn, and deployed using Streamlit for interactive analysis.",
+        tools: ["Python", "Pandas", "scikit-learn", "Streamlit", "Matplotlib", "Seaborn", "HTML", "CSS"],
+        links: [
+          { label: "Live Demo", url: "https://fuel-prediction-demo.vercel.app/" },
+          { label: "View Code", url: "https://github.com/mani1028/Fuel-Predication-Project" }
+        ]
+      },
+      {
+        title: "Generative AI Chatbot for Data Insights",
+        img: "./assets/images/project-6.png",
+        desc: "ATS Score Analysis is a data analytics project focused on evaluating resume compatibility with Applicant Tracking Systems (ATS). The tool parses resumes, extracts keywords, and compares them with job descriptions to generate a match score. Built with Python and Streamlit, it helps job seekers optimize their resumes for better visibility and higher chances of selection. Includes interactive charts and exportable reports.",
+        tools: ["Python", "Streamlit", "NLP", "Pandas", "Matplotlib", "HTML", "CSS"],
+        links: [
+          { label: "Live Demo", url: "https://ats-score-analysis-demo.vercel.app/" },
+          { label: "View Code", url: "https://github.com/mani1028/ATS-score-analysis" }
+        ]
+      },
+      {
+        title: "Jam-Sync",
+        img: "./assets/images/project-4.jpeg",
+        desc: "Jam Sync is a self-hosted collaborative music player that allows users to create synchronized listening rooms. Built with Python, FastAPI, and WebSockets, it streams audio directly from YouTube, enabling friends to listen to music together in real-time.",
+        tools: ["Python", "FastAPI", "WebSockets", "HTML", "CSS"],
+        links: [
+          { label: "Live Demo", url: "https://jam1.onrender.com/" },
+          { label: "View Code", url: "https://github.com/mani1028/jam-sync" }
+        ]
+      },
+      {
+        title: "DOB-DECODE",
+        img: "./assets/images/project-5.png",
+        desc: "DOB-DECODE is a web development project that focuses on decoding and visualizing date of birth information from various document formats. The tool extracts DOB data, analyzes patterns, and presents insights through interactive charts. Built with Python, Streamlit, and various data visualization libraries, it aims to assist HR professionals in understanding candidate demographics.",
+        tools: ["Python", "Flask" , "JavaScript", "HTML", "CSS"],
+        links: [
+          { label: "Live Demo", url: "https://dob-nine.vercel.app/" },
+          { label: "View Code", url: "https://github.com/mani1028/DOB-decode" }
+        ]
+      }
+    ];
+
+    function openModal(index) {
+      const modal = document.getElementById('projectModal');
+      const project = projects[index];
+      
+      // Set modal content
+      document.getElementById('modalImg').src = project.img;
+      document.getElementById('modalTitle').textContent = project.title;
+      document.getElementById('modalDesc').textContent = project.desc;
+      
+      // Set tools
+      const toolsDiv = document.getElementById('modalTools');
+      toolsDiv.innerHTML = '';
+      project.tools.forEach(tool => {
+        const tag = document.createElement('span');
+        tag.className = 'tool-tag';
+        tag.textContent = tool;
+        toolsDiv.appendChild(tag);
+      });
+      
+      // Set links
+      const linksDiv = document.getElementById('modalLinks');
+      linksDiv.innerHTML = '';
+      project.links.forEach(link => {
+        const a = document.createElement('a');
+        a.href = link.url;
+        a.textContent = link.label;
+        a.target = "_blank";
+        linksDiv.appendChild(a);
+      });
+      
+      // Show modal
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('projectModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Resume Modal Functions
+    function openResumeModal() {
+      const modal = document.getElementById('resumeModal');
+      const pdfViewer = document.getElementById('resumePdf');
+      const resumePath = './assets/Manikanta_Chelamalla_Resume.pdf'; // Make sure this path is correct
+
+      pdfViewer.src = resumePath;
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeResumeModal() {
+      const modal = document.getElementById('resumeModal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal when clicking outside content
+    window.addEventListener('click', function(event) {
+      if (event.target == document.getElementById('projectModal')) {
+        closeModal();
+      }
+      if (event.target == document.getElementById('resumeModal')) {
+        closeResumeModal();
+      }
+    });
+
+    // element toggle function
+    const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+    // sidebar variables
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+    // sidebar toggle functionality for mobile
+    if (sidebar && sidebarBtn) {
+      sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+    }
+
+    // custom select variables
+    const select = document.querySelector("[data-select]");
+    const selectItems = document.querySelectorAll("[data-select-item]");
+    const selectValue = document.querySelector("[data-selecct-value]");
+    const filterBtn = document.querySelectorAll("[data-filter-btn]");
+
+    if (select) {
+      select.addEventListener("click", function () { elementToggleFunc(this); });
+    }
+
+    // add event in all select items
+    for (let i = 0; i < selectItems.length; i++) {
+      selectItems[i].addEventListener("click", function () {
+        let selectedValue = this.innerText.toLowerCase();
+        if (selectValue) {
+          selectValue.innerText = this.innerText;
+        }
+        elementToggleFunc(select);
+        filterFunc(selectedValue);
+      });
+    }
+
+    // filter variables
+    const filterItems = document.querySelectorAll("[data-filter-item]");
+
+    const filterFunc = function (selectedValue) {
+      for (let i = 0; i < filterItems.length; i++) {
+        if (selectedValue === "all") {
+          filterItems[i].classList.add("active");
+        } else if (selectedValue === filterItems[i].dataset.category) {
+          filterItems[i].classList.add("active");
+        } else {
+          filterItems[i].classList.remove("active");
+        }
+      }
+    }
+
+    // add event in all filter button items for large screen
+    let lastClickedBtn = filterBtn.length > 0 ? filterBtn[0] : null;
+
+    for (let i = 0; i < filterBtn.length; i++) {
+      filterBtn[i].addEventListener("click", function () {
+        let selectedValue = this.innerText.toLowerCase();
+        if(selectValue) {
+          selectValue.innerText = this.innerText;
+        }
+        filterFunc(selectedValue);
+        if (lastClickedBtn) {
+          lastClickedBtn.classList.remove("active");
+        }
+        this.classList.add("active");
+        lastClickedBtn = this;
+      });
+    }
+
+    // contact form variables
+    const form = document.querySelector("[data-form]");
+    const formInputs = document.querySelectorAll("[data-form-input]");
+    const formBtn = document.querySelector("[data-form-btn]");
+
+    // add event to all form input field
+    for (let i = 0; i < formInputs.length; i++) {
+      formInputs[i].addEventListener("input", function () {
+        // check form validation
+        if (form && form.checkValidity()) {
+          formBtn.removeAttribute("disabled");
+        } else {
+          formBtn.setAttribute("disabled", "");
+        }
+      });
+    }
+
+    // page navigation variables
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    // add event to all nav link
+    for (let i = 0; i < navigationLinks.length; i++) {
+      navigationLinks[i].addEventListener("click", function () {
+
+        for (let j = 0; j < pages.length; j++) {
+          if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+            pages[j].classList.add("active");
+            navigationLinks[j].classList.add("active");
+            window.scrollTo(0, 0);
+
+            // If navigating to the resume page, start the certificate slideshow
+            if (pages[j].dataset.page === 'resume') {
+              updateCertificate(); // Show the first one immediately
+              setInterval(updateCertificate, 4000); // Start the timer
             }
+            
+          } else {
+            pages[j].classList.remove("active");
+            navigationLinks[j].classList.remove("active");
+          }
         }
 
-        // Initial display
-        updateCertificate();
+      });
+    }
+  </script>
 
-        // Change certificate every 4 seconds
-        setInterval(updateCertificate, 4000);
-    </script>
-</section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">PRECISED FOOD</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mani1028.github.io/precidefood/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://precidefood.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Fuel-Predication</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/mani1028/Fuel-Predication-Project'"
-              >
-                Github
-              </button>
-             <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">DOB-Decode</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/mani1028/DOB-decode'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://dob-nine.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  
-        <!--<div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">PRECISED FOOD</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mani1028.github.io/precidefood/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://precidefood.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Fuel-Predication</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/mani1028/Fuel-Predication-Project'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-         <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/mani1028/DOB-decode'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://dob-nine.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:chelamalla.manikanta28@gmail.com">chelamalla.manikanta28@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/mani1028/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certificates">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Mani. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
